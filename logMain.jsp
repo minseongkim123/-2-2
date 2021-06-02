@@ -10,8 +10,6 @@
 
 <%
 	 if ((String)session.getAttribute("userId") != null) { // 로그인 상태일 떄의 출력
-
-
 %>
 
 	<form action="logOut.jsp" method="post"> 

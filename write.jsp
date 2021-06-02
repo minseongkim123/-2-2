@@ -16,21 +16,29 @@
 	String action	= "insert.jsp";
 	
 	//글 번호가 주어졌으면, 글 수정 모드
-	
+	if (num > 0 ) {
+		
+		Class.forName("org.mariadb.jdbc.Driver");
+		try (
+			Connection conn = DriverManager.getConnection(
+					"jdbc:mariadb://localhost:3306/jspdb", "jsp", "1234");
+			Statement stmt = conn.createStatement();
+		
 	// 쿼리 실행
 	ResultSet rs = stmt.executeQuery(
-		"select from board where num=" + num);
+		"select * from board where num=" + num);
 	) {
-		if(rs.next()) { //읽어들인 글 데이터를 변수에 저장
-			writer = rs.getString("writer");
-			title = rs.getString("title");
-			content = rs.getString("content");
+		if(rs.next()) { 
+			//읽어들인 글 데이터를 변수에 저장
+				writer	= rs.getString("writer");
+				title	= rs.getString("title");
+				content = rs.getString("content");
 			
-	// 글 수정 모드일 때 저장 버튼을 누르면 업데이트 실행
-	action = "update.jsp?num=" + num;
-	}
-} catch(Exception e) {
-	e.printStackTrace();
+			// 글 수정 모드일 때 저장 버튼을 누르면 업데이트 실행
+			action = "update.jsp?num=" + num;
+		}
+	} catch(Exception e) {
+		e.printStackTrace();
 	}
 }
 %>
@@ -59,7 +67,7 @@
 		<tr>
 			<th>작성자</th>
 			<td><input type="text" name="writer" maxlength="20"
-						value="">
+						value="<%=writer%>">
 			</td>
 		</tr>
 		<tr>
