@@ -14,6 +14,25 @@
 	String title	= "";
 	String content	= "";
 	String action	= "insert.jsp";
+	
+	//글 번호가 주어졌으면, 글 수정 모드
+	
+	// 쿼리 실행
+	ResultSet rs = stmt.executeQuery(
+		"select from board where num=" + num);
+	) {
+		if(rs.next()) { //읽어들인 글 데이터를 변수에 저장
+			writer = rs.getString("writer");
+			title = rs.getString("title");
+			content = rs.getString("content");
+			
+	// 글 수정 모드일 때 저장 버튼을 누르면 업데이트 실행
+	action = "update.jsp?num=" + num;
+	}
+} catch(Exception e) {
+	e.printStackTrace();
+	}
+}
 %>
     
 <!DOCTYPE html>
