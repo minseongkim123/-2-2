@@ -38,7 +38,7 @@
 		</td>
 		<td>김민성</td>
 		<td>2021-06-20 22:10:45</td>
-		<td>12</td>
+		<td>4</td>
 	<tr>
 		<td>4</td>
 		<td style="text-align:left;">
@@ -46,7 +46,7 @@
 		</td>
 		<td>박천수</td>
 		<td>2021-06-20 21:03:50</td>
-		<td>12</td>
+		<td>5</td>
 	<tr>
 		<td>3</td>
 		<td style="text-align:left;">
@@ -54,7 +54,7 @@
 		</td>
 		<td>신수민</td>
 		<td>2021-06-20 20:32:20</td>
-		<td>12</td>
+		<td>11</td>
 	<tr>
 		<td>2</td>
 		<td style="text-align:left;">
@@ -62,7 +62,7 @@
 		</td>
 		<td>김민성</td>
 		<td>2021-06-20 17:10:50</td>
-		<td>12</td>
+		<td>7</td>
 	</tr>
 	<tr>
 		<td>1</td>
@@ -71,7 +71,7 @@
 		</td>
 		<td>김민성</td>
 		<td>2021-06-19 14:30:20</td>
-		<td>31</td>
+		<td>8</td>
 	</tr>
 		 
 	<c:forEach var="msg" items="${msgList}">	
