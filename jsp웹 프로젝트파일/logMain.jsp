@@ -20,6 +20,8 @@
 	<input type="submit" value="로그아웃">
 	<input type="button" value="관리자정보 수정"
 		onclick="window.open('member_update_form.jsp', 'popup', 'width=400, height-200')">
+	<input type="button" value="메인화면 이동"
+		onclick="window.open('index.html')">
 	</form>
 	
 	<%
