@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#메뉴 점없애기
+li {
+	list-style: none; 
+}
+body {
+	font-family: "돋움";
+	color: #444444;
+} 
+.clear {
+	clear: both;
+}
+header {
+	height:224px;
+	/* border: solid 1px red; */
+}
+#top {
+	height: 62px;
+	background-color: #eae1d8;
+}
+.box {
+	width: 1320px;
+	margin: 0 auto;
+	border: 0;
+}
+
+
+#top_logo {
+	float: left;
+}
+#top_logo img {
+	width: 50px;
+	margin: 6px 0 0 10px;
+}
+#top_ad {
+	float: left;
+	margin: 24px 0 0 10px;
+	font-size: 12px;
+}
+#search {
+	float: right;
+	background-image: url("img/search_bg.png");
+	width: 233px;
+	height: 54px; 
+	margin: 5px 20px 0 0;  
+} 
+#search input {
+	margin: 19px 0 0 25px;	
+	height: 20px;
+	border: 0;  
+}
+#top_box {
+	width: 1320px;
+	margin: 0 auto;
+	border: solid 1px blue; 
+}
+#logo_image {
+	
+	float: left;
+	margin: 30px 0 0 320px;
+}
+#main_menu {
+	padding: 25px 20px;
+	border-top: solid 1px #dddddd;
+	border-bottom: solid 1px #dddddd;
+	font-size: 12px;
+}
+#main_menu li {
+	display: inline; 
+	margin-left: 30px;
+}
+#content_box {
+	padding-top: 50px;
+}
+#content_box h3 {
+	float: left;
+	margin-left: 610px;
+}
+#content_box p {
+	float: right;
+	margin-right: 20px;
+}
+.items {
+	width: 500px;
+	margin: 30px 0 0 25px;
+	float: left;
+}
+.items li {
+	list-style:none;
+	font-family: "돋움";
+	color: #666666;
+}
+.items .a {
+	font-weight: bold;
+	color: black;
+	margin-top: 20px;
+}
+.items .b {
+	font-weight: bold;
+	color: black;
+	margin-top: 5px;
+}
+.items .b span {
+	color: #a26f59;
+}
+.items .c {
+	font-size: 12px;
+	margin-top: 20px;
+}
+.items .d {
+	font-size: 12px;
+	margin-top: 25px;
+
+}
+.items .d span {
+	color: #a26f59;
+}
+footer {
+	height: 300px;
+	border-top: solid 1px #cccccc;
+	margin-top: 70px;
+}
+#footer_menu {
+	padding: 20px;
+}
+#footer_menu li {
+	display: inline;
+}
+.footers {
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 80px;
+	float: left;
+}
+.footers li {
+	margin-top: 8px;
+	font-size: 12px;
+}
+.footers span {
+	font-weight: bold;
+}
+#top_logo img{
+	width: 70px;
+	margin: 6px 0 0 10px;
+}
+
+
+
+</style>
+</head>
+<body>
+<header>
+	<div id="top">
+		<div class="box">
+			<div id="top_logo">
+				<img src="img/logo.png">
+			</div>
+			
+			<div id="top_ad">
+				편안한 가구 Nature 입니다.
+			</div> <!--  box -->
+			
+			<div id="search">
+				<input type="text">				
+			</div>
+		</div>
+	
+	</div> <!-- top -->
+	<div class="clear"></div>
+	
+	<div id="logo">
+		<div class="box">
+			
+			<div id="logo_image">
+				<img src="img/logo.png" width="720" height="100">
+			</div>
+		</div>
+	</div> <!-- logo -->
+</header>
+
+<nav id="main_menu">
+	<div class="box">
+		<ul>
+		<li>전체상품</li>
+		<li>공지사항</li>
+		</ul>
+	</div>
+</nav>
+
+<section id="content_box">
+	<div class="box">
+		<h3>전체 상품</h3>
+		<p> 판매자추천순 | 최신등록순</p>
+		<div class="clear"></div> <!-- 앞의 float 속성 무시 -->
+
+		<ul class="items">
+			<li><img src="img/fur1.jpg" width="420" height="350"></li>
+			<li class="a">가구1</li>
+			<li class="b">10000원 </li>
+			<li class="c">&quot;가구1 입니다</li>
+			<li class="d">리뷰 <span>2</span> 평점 · <span>4.5/5</span></li>
+		</ul>
+		
+		<ul class="items">
+			<li><img src="img/fur2.jpg" width="420" height="350"></li>
+			<li class="a">가구2</li>
+			<li class="b">20000원 </li>
+			<li class="c">&quot;가구2 입니다</li>
+			<li class="d">리뷰 <span>2</span> 평점 · <span>4.5/5</span></li>
+		</ul>
+		
+		<ul class="items">
+			<li><img src="img/fur3.png" width="420" height="350"></li>
+			<li class="a">가구3</li>
+			<li class="b">30000원 </li>
+			<li class="c">&quot;가구3 입니다</li>
+			<li class="d">리뷰 <span>2</span> 평점 · <span>4.5/5</span></li>
+		</ul>
+		
+					
+	</div>
+
+	<div class="clear"></div>
+</section>
+
+<footer>
+	<div class="box">
+		<ul id="footer_menu">
+		<li>회사 약관</li>
+		</ul>
+
+		<div class="footers">
+			<h3>쇼핑몰 회사(주)</h3>
+			<ul>
+			<li>사업자 등록번호 12345</li>
+			<li>대표이사 김민성 | 부산</li>
+			<li>전화 1234-1234 </li>
+			</ul>
+		</div>
+		
+		
+
+	</div>
+</footer>
+</body>
+</html>
